@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for name, number in clock.items() %}
+        <p><b>{{ name }}s: </b> {{ number }}</p>
+    {% endfor %}
+{% endblock %}
